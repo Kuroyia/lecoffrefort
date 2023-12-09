@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(144, 225, 255);
+    font-family: face;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+@font-face {
+    font-family: face;
+    src: url(../../cryptoftomorrow.ttf);
+}
+  h1 {
+    text-align: center;
+    color: #000000;
+  }
+  
+  .return-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.return-arrow a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.special-text {
+    font-size: 30px;
+    font-family: face;
+    color: #000000; /* Adjust color as needed */
+    text-align: center;
+}
+
+#wordContainer {
+    text-align: center;
+}
+
+#wordInput {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.spoiler {
+    width: 200px;
+    height: 150px;
+    background-color: lightgray;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    line-height: 150px;
+}
+
+.spoiler img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.spoiler:hover img {
+    opacity: 1;
+}
+

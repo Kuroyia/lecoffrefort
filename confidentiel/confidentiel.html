@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="confidentiel.css">
+    <title>CONFIDENTIEL MGL</title>
+</head>
+<body>
+    <div class="return-arrow">
+        <a href="../../menu.html" style="text-decoration:none">Return</a>
+      </div>
+    <div id="wordContainer">
+        <input type="text" id="wordInput">
+        <button onclick="checkWord()">si t'es sur de toi go</button>
+    </div>
+
+    <div id="squareContainer" style="display: none;">
+        <div class="spoiler" onmouseover="revealImage(1)" onmouseout="hideImage(1)">
+            cc
+            <img src="image1.png" alt="Image 1">
+        </div>
+        <div class="spoiler" onmouseover="revealImage(2)" onmouseout="hideImage(2)">
+            cc
+            <img src="image2.png" alt="Image 2">
+        </div>
+    </div>
+
+    <script src="confidentiel.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE QUIZZ DE L'ANNEE</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="return-arrow">
+        <a href="../../menu.html" style="text-decoration:none">Return</a>
+    </div>
+
+    <div id="quiz-container">
+        <div id="question-counter"></div>
+        <h1 id="question">Tu t'appelles comment ?</h1>
+        <div id="options-container" class="grid-container">
+            <button class="option" onclick="checkAnswer(this)">Option 1</button>
+            <button class="option" onclick="checkAnswer(this)">Option 2</button>
+            <button class="option" onclick="checkAnswer(this)">Option 3</button>
+            <button class="option" onclick="checkAnswer(this)">Option 4</button>
+        </div>
+        <button id="next-btn" onclick="nextQuestion()">neeeeext</button>
+        <button id="reset-btn" onclick="resetQuestion()">t nul retry</button>
+    </div>
+
+    <script src="chap0.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+body{
+    background-color: rgb(144, 225, 255);
+    font-family: face;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.return-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.return-arrow a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 100px;
+    padding: auto;
+    transition: transform .2s;
+}
+
+.zoomin:hover{
+    transform: scale(1.2);
+}
+
+p{
+    padding: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: face;
+    src: url(cryptoftomorrow.ttf);
+}
+
+a{
+    color: black;
+}
+
+.chapters-top{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 40px;
+    
+}
+
+.chapters-top a{
+    font-size: 25px;
+    padding: 30px;
+    transition: transform .2s;
+    
+}
+
+.chapters-top a:hover{
+    transform: scale(1.2);
+}
+
+.chapters-bottom{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.chapters-bottom a{
+    font-size: 25px;
+    padding: 30px;
+    transition: transform .2s;
+}
+
+.chapters-bottom a:hover{
+    transform: scale(1.2);
+    transition: ease-in-out .2s;
+}
+
+.return-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: transform .2s;
+}
+
+.return-arrow a {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+.return-arrow:hover {
+    transform: scale(1.2);
+}
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+}
+
+#options-container.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.option {
+    padding: 50px;
+    font-family: face;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #eee; /* Change the background color on hover */
+}
+
+#next-btn,
+#reset-btn {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: face;
+    cursor: pointer;
+    display: none;
+    background-color: #4cadaf; /* Change the button color */
+    color: rgb(0, 0, 0); /* Change the text color */
+    border: none;
+    border-radius: 5px;
+}
+
+#next-btn:hover,
+#reset-btn:hover {
+    background-color: #3c8f91; /* Darker color on hover */
+}

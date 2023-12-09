@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(144, 225, 255);
+    font-family: face;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+@font-face {
+    font-family: face;
+    src: url(../../cryptoftomorrow.ttf);
+}
+
+.return-arrow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: transform .2s;
+}
+
+.return-arrow a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+.return-arrow:hover {
+  transform: scale(1.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.word-container {
+  position: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.anniversaire-word {
+  font-size: 1em;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+}
+
+.anntversaire-word {
+  font-size: 1em;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+}
+
+#message {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #000000;
+}

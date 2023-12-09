@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(144, 225, 255);
+    font-family: face;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+    h1 {
+      font-size: 40px;
+      margin: 20px 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      max-height: 400px;
+    }
+
+    input {
+      margin: 10px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      background: rgb(51, 54, 188);
+      border: none;
+      color: rgb(0, 0, 0);
+      border-radius: 3px;
+      margin: 5px;
+    }
+
+    button:hover {
+      background: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+    }
+    .return-arrow {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      transition: transform .2s;
+  }
+  
+  .return-arrow a {
+      color: black;
+      font-size: 16px;
+      text-decoration: none;
+  }
+  .return-arrow:hover {
+      transform: scale(1.2);
+  }
+  
+    @font-face {
+        font-family: face;
+        src: url(../../cryptoftomorrow.ttf);
+    }
+
+    .winMessage {
+        font-size: 30px;
+        font-family: face;
+        color: #000000; /* Adjust color as needed */
+        text-align: center;
+    }
